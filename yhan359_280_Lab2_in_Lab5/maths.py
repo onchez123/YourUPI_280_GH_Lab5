@@ -39,5 +39,9 @@ def convert_base(num, n):
         current = current//n
     return new_num_string
 
-def factorial(num): 
-    pass
+def factorial(x):
+    """Calculates the factorial of a number."""
+    if x == 0:
+        return 1
+    else:
+        return x * factorial(x-1)
