@@ -26,6 +26,10 @@ class MathsTest(unittest.TestCase):
         self.assertEqual('A', convert_base_add, "Test failed")
         convert_base_add2 = maths.add(5,5,2)
         self.assertEqual('1010', convert_base_add2, "Test failed")
+        
+    def test_factorial(self):
+        f = factorial(5)
+        self.assertEqual(f, 120, "Test failed")
 
 # This allows running the unit tests from the command line (python test_maths.py)
 if __name__ == '__main__':
